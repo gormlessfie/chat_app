@@ -5,12 +5,20 @@
 
     <div class="field">
       <%= f.label :username %><br />
-      <%= f.text_field :username, autofocus: true, autocomplete: "username", placeholder: 'uwux3', class: 'input' %>
+
+      <div class='control has-icons-left'>
+        <%= f.text_field :username, autofocus: true, autocomplete: "username", placeholder: 'uwux3', class: 'input' %>
+        <span class='icon is-left'><%= icon('fas', 'user') %></span>
+      </div>
     </div>
 
     <div class="field">
       <%= f.label :password %><br />
-      <%= f.password_field :password, autocomplete: "current-password", class: 'input' %>
+
+      <div class='control has-icons-left'>
+        <%= f.password_field :password, autocomplete: "current-password", class: 'input' %>
+        <span class='icon is-left'><%= icon('fas', 'unlock') %></span>
+      </div>
     </div>
 
     <% if devise_mapping.rememberable? %>
