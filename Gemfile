@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'bulma-rails', '~> 0.9.2'
+gem 'font-awesome-sass', '~> 5.15.1'
 gem 'cancancan', '~> 3.3'
 
 group :development, :test do
