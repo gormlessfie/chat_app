@@ -7,4 +7,6 @@ class User < ApplicationRecord
   validates :username, presence: true,
                        length: { in: 3..12 },
                        format: { with: /\A[a-zA-Z0-9]*\Z/, message: 'only allow letters and numbers'}
+  
+  validates :role, presence: true, inclusion: { in: %w(chatter admin) }
 end
