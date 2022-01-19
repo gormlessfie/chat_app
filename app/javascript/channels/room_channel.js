@@ -12,7 +12,9 @@ const roomChannel = consumer.subscriptions.create("RoomChannel", {
   received(data) {
     // Called when there's incoming data on the websocket for this channel
     const messageDisplay = document.querySelector('#message-box')
-    messageDisplay.insertAdjacentHTML('beforeend', this.template(data))
+    messageDisplay.insertAdjacentHTML('beforeend', this.template(data));
+
+    const textField = document.querySelector('#message-input').value = '';
   },
 
   template(data) {
