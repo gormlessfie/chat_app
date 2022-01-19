@@ -6,5 +6,5 @@ test:
 
 production:
   adapter: redis
-  url: <%= ENV.fetch("REDISTOGO_URL") { redis://redistogo:520f5ab13ca621b006ca694cb5acd2de@pearlfish.redistogo.com:10642/ } %>
+  url: <%= ENV.fetch("REDISTOGO_URL") %>
   channel_prefix: chat_app_production

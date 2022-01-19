@@ -41,9 +41,9 @@ Rails.application.configure do
   config.active_storage.service = :local
 
   # Mount Action Cable outside main process or domain.
-  # config.action_cable.mount_path = nil
-  # config.action_cable.url = 'wss://example.com/cable'
-  # config.action_cable.allowed_request_origins = [ 'http://example.com', /http:\/\/example.*/ ]
+  config.action_cable.mount_path = '/cable'
+  config.action_cable.url = 'redis://redistogo:520f5ab13ca621b006ca694cb5acd2de@pearlfish.redistogo.com:10642/'
+  config.action_cable.allowed_request_origins = [ 'https://thawing-plateau-85811.herokuapp.com', /https:\/\/thawing-plateau-85811.herokuapp.com/ ]
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # config.force_ssl = true
