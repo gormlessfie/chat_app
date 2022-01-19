@@ -31,6 +31,7 @@ gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'bulma-rails', '~> 0.9.2'
 gem 'font-awesome-sass', '~> 5.15.1'
 gem 'cancancan', '~> 3.3'
+gem 'redis', '~> 4.5', '>= 4.5.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
