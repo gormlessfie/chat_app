@@ -1,0 +1,12 @@
+<div class='container box mt-3' id='message-box'>
+  <% @messages.each do |message| %>
+    <p><%= message.user.username %>: <%= message.body %></p>
+  <% end %>
+</div>
+
+<div class='container box'>
+  <%= form_with model: @message, local: false do |f| %>
+    <%= f.text_field :body, class: 'input', id: 'message-input' %>
+    <%= f.submit 'Send message', class: 'button is-primary' %>
+  <% end %>
+</div>

@@ -10,4 +10,6 @@ class User < ApplicationRecord
                        format: { with: /\A[a-zA-Z0-9]*\Z/, message: 'only allow letters and numbers'}
   
   validates :role, presence: true, inclusion: { in: %w(chatter admin) }
+
+  has_many :messages
 end
